@@ -154,7 +154,6 @@ public class obj1 {
                     break;
 
                 case 5:
-                    System.out.println();
                     if (disponibles == 0) {
                         System.out.println("Esta array está completamente vacía");
                     }
