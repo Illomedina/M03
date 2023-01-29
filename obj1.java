@@ -44,7 +44,8 @@ public class obj1 {
                         }
                         /* Introdueix el nou valor en la posició */
                         nombres[posicioInserir] = valorInserir;
-                        disponibles++;
+                        //No augmentem disponibles ja que estem en el nombre màxim.
+                        //disponibles++;
                     } else if (disponibles == 0) {
                         System.out.println("El valor que vas a introduir es posarà en la posioció 0");
                         System.out.println("Introdueix el cognom que vols inserir");
@@ -72,15 +73,17 @@ public class obj1 {
                         if (nombres[posicioInserir] == null) {
                             nombres[posicioInserir] = valorInserir;
                         } else {
-                            for (int i = disponibles - 1; posicioInserir < i; i--) {
+                            for (int i = disponibles; posicioInserir < i; i--) {
                                 nombres[i] = nombres[i - 1];
                             }
+                            nombres[posicioInserir] = valorInserir;
                         }
                         disponibles++;
                     }
                     break;
 
                 case 2:
+                System.out.println();
                     if (disponibles == 0) {
                         System.out.println("No hay valores en la array");
                     } else {
@@ -151,6 +154,7 @@ public class obj1 {
                     break;
 
                 case 5:
+                    System.out.println();
                     if (disponibles == 0) {
                         System.out.println("Esta array está completamente vacía");
                     }
@@ -198,6 +202,7 @@ public class obj1 {
                             disponibles--;
                         }
                     }
+                    disponibles=0;
                     break;
 
                 case 7:
@@ -218,7 +223,7 @@ public class obj1 {
                                     System.out.println();
                                     break;
                                 case 2: // Último nombre
-                                    System.out.println(nombres[disponibles]);
+                                    System.out.println(nombres[disponibles-1]);
                                     System.out.println();
                                     break;
                                 case 5: // En caso de querer finalizar el programa.
