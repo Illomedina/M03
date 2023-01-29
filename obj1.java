@@ -278,6 +278,7 @@ public class obj1 {
         // Hem de solucionar un problema amb les variables usades per guardar valors en
         // cada un dels métodes. Tenim que establir una nomenclatura o compartir una
         // variable.
+    scanner.close();
 
     }
 
