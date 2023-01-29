@@ -158,6 +158,7 @@ public class obj1 {
                         System.out.println("Esta array está completamente vacía");
                     }
                     System.out.print("Introduce el nombre que quieres buscar: ");
+                    System.out.println();
                     String o = scanner.nextLine();
                     System.out.println();
                     int y = 0; // Contador
