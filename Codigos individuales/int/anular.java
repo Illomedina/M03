@@ -4,17 +4,17 @@ public class anular {
   public static void main(String[] args) {
     int disponibles = 9;
     final int N = 9;
-    int[][][] UF = new int[N];
+    int[][] UF = new int[N];
 
-    UF[0][0][0] = 5;
-    UF[0][0][1] = 2;
-    UF[0][0][2] = 4;
-    UF[0][1][0] = 5;
-    UF[0][1][1] = 7;
-    UF[0][1][2] = 9;
-    UF[0][2][0] = 10;
-    UF[0][2][1] = 10;
-    UF[0][2][2] = 10;
+    UF[0][0] = 5;
+    UF[0][1] = 2;
+    UF[0][2] = 4;
+    UF[1][0] = 5;
+    UF[1][1] = 7;
+    UF[1][2] = 9;
+    UF[2][0] = 10;
+    UF[2][1] = 10;
+    UF[2][2] = 10;
 
     /* Aqui comprovaremos que se han guardado los valores */
     for (int i = 0; i < disponibles; i++) {
