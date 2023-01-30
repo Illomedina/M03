@@ -28,7 +28,7 @@ public class localitzar {
 
     else {
 
-      System.out.print("Introduce el nombre que quieres buscar: ");
+      System.out.print("Introduce la nota que quieres buscar: ");
       int x = scanner.nextInt();
       System.out.println();
       int i = 0; // Contador
@@ -53,10 +53,10 @@ public class localitzar {
        * que digo en que posición ha sido encontrado.
        */
       if (i < disponibles) {
-        System.out.print("El nombre introducido se encuentra en la posición " + (i)+"."+(j));
+        System.out.print("La nota introducida se encuentra en la posición " + (i)+"."+(j));
         System.out.println();
       } else { // En caso contrario especificará que el nombre no ha sido encontrado.
-        System.out.println("No se ha encontrado el nombre introducido.");
+        System.out.println("No se ha encontrado la nota introducida.");
         System.out.println();
       }
     }
