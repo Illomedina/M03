@@ -37,6 +37,5 @@ public class anular {
 
     /* Imprimir las posiciones disponibles */
     System.out.println(disponibles);
-
   }
 }
